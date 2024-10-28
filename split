@@ -1,0 +1,4 @@
+n = (input())
+x = n.split()
+m = int(x[1])
+print(m)

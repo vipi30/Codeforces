@@ -16,4 +16,3 @@ for i in range(t):
         print('2')
     else: 
         print('1')
-        

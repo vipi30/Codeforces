@@ -8,7 +8,7 @@ for i in range(t):
     sitios = next(read)
 
     if '1' not in sitios: 
-        print((n+2)//3) 
+        print(n//2) 
     
     else: 
         unos = sitios.count('1')
@@ -18,10 +18,11 @@ for i in range(t):
 
         for j in range(len(bloques)): 
             cantidad = len(bloques[j])
-
             if j == 0 or j == len(bloques) -1: 
-                añadir += (cantidad+1)//3
+                añadir += cantidad//3
             else:
                 if cantidad >= 3: 
-                    añadir += (cantidad) // 3
+                    añadir += (cantidad-2) // 3
+                else: 
+                    añadir += 0
         print(unos+añadir)

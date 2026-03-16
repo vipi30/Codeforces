@@ -14,7 +14,7 @@ for i in range(t):
 
         if i > 0: 
             p+=2 * (x+y)
-        
+    
     res.append(p)
 print('\n'.join(map(str, res)))
 

@@ -1,26 +1,21 @@
-import sys 
-
-read = sys.stdin.read().split()
-t = int(read[0])
-indice = 1
+t = int(input())
 res = []
 
-for _ in range(t): 
-    s = read[indice]
-    indice += 1
+for _ in range(t):
+    s = input().strip()
 
     c = [0] * 10
-    for i in s: 
+    for i in s:
         c[ord(i) - ord('0')] += 1
     
     actual = []
-    for necesito in range(9, -1, -1):  
+    for necesito in range(9, -1, -1):
         for d in range(necesito, 10):
-            if c[] > 0:
+            if c[d] > 0:
                 c[d] -= 1
                 actual.append(str(d))
                 break
+
     res.append(''.join(actual))
 
-print(*res, sep='\n')
-
+print('\n'.join(res))

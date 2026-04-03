@@ -39,9 +39,6 @@ for i in range(t):
     elif b1 == s and l2 == l3 and l1 + l2 == s and b2 + b3 == s:
         ok = True
 
-    elif b1 == s and b2 == s and b3 == s and l1 + l2 + l3 == s:
-        ok = True
-
     if ok: 
         res.append('YES')
     else: 

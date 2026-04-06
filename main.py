@@ -7,11 +7,14 @@ for i in range(t):
     n = int(next(read))
     a = [int(next(read)) for _ in range(n)]
 
-    total = sum(a)
+    total = 0
+    ceros = 0
 
-    if 0 in a: 
-        total+= 1
-    print(total)
+    for x in a: 
+        total += x 
+        if x == 0: 
+            ceros+=1
+    print(total+ceros)
 
 
     
